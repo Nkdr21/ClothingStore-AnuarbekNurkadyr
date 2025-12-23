@@ -1,31 +1,37 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Week 2 - Clothing Store");
+        System.out.println("Week 2 - Clothing Store (Nomad Edition)");
 
-        ClothingItem hoodie = new ClothingItem(101, "Hoodie", "M", "Nike", 65000, 10);
-        ClothingItem jeans  = new ClothingItem(102, "Jeans", "L", "Qazaq Republic", 45000, 5);
+        // Traditional / creative items
+        ClothingItem shapan = new ClothingItem(201, "Shapan", "L", "Steppe Style", 85000, 4);
+        ClothingItem taqiya = new ClothingItem(202, "Taqiya", "M", "Nomad Wear", 12000, 20);
 
-        Customer c1 = new Customer(1, "Nurkadyr", "M");
+        Customer c1 = new Customer(7, "Nurkadyr", "M");
 
-        System.out.println(hoodie);
-        System.out.println(jeans);
+        System.out.println("\n--- Initial data ---");
+        System.out.println(shapan);
+        System.out.println(taqiya);
         System.out.println(c1);
 
-        hoodie.applyDiscount(10);
-        System.out.println("After discount hoodie price: " + hoodie.getPrice());
-        System.out.println("Is hoodie premium? " + hoodie.isPremium());
+        // discount demo
+        System.out.println("\n--- Discount demo ---");
+        shapan.applyDiscount(15);
+        System.out.println("After discount Shapan price: " + shapan.getPrice());
+        System.out.println("Is Shapan premium? " + shapan.isPremium());
 
-        Order order1 = new Order(5001, c1);
-        order1.addItem(hoodie, 2);
-        order1.addItem(jeans, 1);
+        // order demo
+        System.out.println("\n--- Order demo ---");
+        Order order1 = new Order(9001, c1);
+        order1.addItem(shapan, 1);
+        order1.addItem(taqiya, 2);
 
-        System.out.println(order1);
+        System.out.println("Before complete: " + order1);
 
+        // complete demo (points update)
         order1.complete();
-        System.out.println("After complete:");
-        System.out.println(order1);
-        System.out.println(c1);
+        System.out.println("After complete: " + order1);
+        System.out.println("Customer after purchase: " + c1);
 
-        System.out.println("Program complete.");
+        System.out.println("\nProgram complete.");
     }
 }
