@@ -7,6 +7,16 @@ public class Order {
     private String status; // NEW, COMPLETED, CANCELED
     private double total;
 
+    //default constructor (required)
+    public Order() {
+        this.orderId = 0;
+        this.customer = new Customer();
+        this.items = new ArrayList<>();
+        this.status = "NEW";
+        this.total = 0.0;
+    }
+
+    //parameterized constructor
     public Order(int orderId, Customer customer) {
         this.orderId = orderId;
         this.customer = customer;
@@ -40,7 +50,6 @@ public class Order {
     public void cancel() {
         if (!status.equals("NEW")) return;
         status = "CANCELED";
-
     }
 
     // getters/setters

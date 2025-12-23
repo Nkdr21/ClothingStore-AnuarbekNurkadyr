@@ -5,6 +5,16 @@ public class Customer {
     private int points;
     private double totalSpent;
 
+    // default constructor (required)
+    public Customer() {
+        this.customerId = 0;
+        this.name = "Unknown";
+        this.preferredSize = "Unknown";
+        this.points = 0;
+        this.totalSpent = 0.0;
+    }
+
+    // parameterized constructor
     public Customer(int customerId, String name, String preferredSize) {
         this.customerId = customerId;
         this.name = name;

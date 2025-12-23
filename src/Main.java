@@ -3,9 +3,9 @@ public class Main {
         System.out.println("Week 2 - Clothing Store");
 
         ClothingItem hoodie = new ClothingItem(101, "Hoodie", "M", "Nike", 65000, 10);
-        ClothingItem jeans  = new ClothingItem(102, "Jeans", "L", "Levis", 45000, 5);
+        ClothingItem jeans  = new ClothingItem(102, "Jeans", "L", "Qazaq Republic", 45000, 5);
 
-        Customer c1 = new Customer(1, "Aruzhan", "M");
+        Customer c1 = new Customer(1, "Nurkadyr", "M");
 
         System.out.println(hoodie);
         System.out.println(jeans);

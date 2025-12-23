@@ -6,6 +6,17 @@ public class ClothingItem {
     private double price;
     private int stock;
 
+    // default constructor (required)
+    public ClothingItem() {
+        this.itemId = 0;
+        this.name = "Unknown";
+        this.size = "Unknown";
+        this.brand = "NoBrand";
+        this.price = 0.0;
+        this.stock = 0;
+    }
+
+    // parameterized constructor
     public ClothingItem(int itemId, String name, String size, String brand, double price, int stock) {
         this.itemId = itemId;
         this.name = name;
