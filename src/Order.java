@@ -34,7 +34,6 @@ public class Order {
         if (!status.equals("NEW")) return;
         status = "COMPLETED";
 
-        // customer-ге “сатып алу” ретінде тіркейміз
         customer.addPurchase(total);
     }
 

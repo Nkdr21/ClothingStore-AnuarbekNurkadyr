@@ -1,7 +1,7 @@
 public class ClothingItem {
     private int itemId;
     private String name;
-    private String size;   // for example S, M, L...
+    private String size;   // Like S, M, L...
     private String brand;
     private double price;
     private int stock;
