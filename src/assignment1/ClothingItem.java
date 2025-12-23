@@ -1,3 +1,5 @@
+package assignment1;
+
 public class ClothingItem {
     private int itemId;
     private String name;
@@ -48,6 +50,10 @@ public class ClothingItem {
         return false;
     }
 
+    //week2.Customer a = new
+    //week2.Customer();  default
+
+    //week2.Customer a = new c1(1,NurKadyr)2
     // getters/setters
     public int getItemId() { return itemId; }
     public void setItemId(int itemId) { this.itemId = itemId; }
@@ -69,7 +75,7 @@ public class ClothingItem {
 
     @Override
     public String toString() {
-        return "ClothingItem{" +
+        return "week2.ClothingItem{" +
                 "itemId=" + itemId +
                 ", name='" + name + '\'' +
                 ", size='" + size + '\'' +

@@ -1,3 +1,5 @@
+package assignment1;
+
 import java.util.ArrayList;
 
 public class Order {
@@ -70,7 +72,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
+        return "week2.Order{" +
                 "orderId=" + orderId +
                 ", customer=" + customer.getName() +
                 ", itemsCount=" + items.size() +

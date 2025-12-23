@@ -1,3 +1,5 @@
+package assignment1;
+
 public class Customer {
     private int customerId;
     private String name;
@@ -55,7 +57,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "week2.Customer{" +
                 "customerId=" + customerId +
                 ", name='" + name + '\'' +
                 ", preferredSize='" + preferredSize + '\'' +
