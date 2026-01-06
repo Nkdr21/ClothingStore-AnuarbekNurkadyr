@@ -1,5 +1,11 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-# Editor-based HTTP Client requests
-/httpRequests/
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Build / output
+out/
+target/
+bin/
+
+# Mac
+.DS_Store
