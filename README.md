@@ -26,3 +26,17 @@ Features:
 
 How to run:
 Run assignment2.Main
+# Assignment 3: Clothing Store Improvement
+
+## Student: Anuarbek Nurkadyr
+
+### Project Description
+This is the updated version of the Clothing Store project for **Assignment 3**.
+Although the package is named `assignment2`, this code contains all the new requirements:
+- ✅ **Interface implementation** (Foldable)
+- ✅ **Abstract Classes** (ClothingItem)
+- ✅ **Exception Handling** (MyException, try-catch)
+- ✅ **Clean Code** (Main class is minimal)
+
+### How to Run
+Run `Main.java` to start the Store Menu.
