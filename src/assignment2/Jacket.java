@@ -1,41 +1,31 @@
 package assignment2;
 
-// Child #2
 public class Jacket extends ClothingItem {
 
-    private boolean waterproof;
+    private boolean isWaterproof;
 
-    public Jacket() {
-        super(); // super first
-        this.waterproof = false;
+    // CONSTRUCTOR:
+    public Jacket(int id, String name, double price, boolean isWaterproof) {
+        super(id, name, price); // <--- ҚАЗІР ДҰРЫС БОЛДЫ (3 зат)
+        this.isWaterproof = isWaterproof;
     }
 
-    public Jacket(int id, String name, String brand, double price, int stock, boolean waterproof) {
-        super(id, name, brand, price, stock); // super first
-        this.waterproof = waterproof;
+    public boolean isWaterproof() {
+        return isWaterproof;
     }
 
-    public boolean isWaterproof() { return waterproof; }
+    @Override
+    public String getCategory() {
+        return "Outerwear";
+    }
 
-    // override #1
     @Override
     public void wear() {
-        System.out.println(name + " jacket, waterproof = " + waterproof);
+        System.out.println("Wearing jacket. Waterproof: " + isWaterproof);
     }
 
-    // override #2
     @Override
-    public String getType() {
-        return "Jacket";
-    }
-
-    // unique method #1
-    public void zip() {
-        System.out.println("Zip the jacket.");
-    }
-
-    // unique method #2
-    public boolean isWinterReady() {
-        return waterproof; // simple rule
+    public String toString() {
+        return "Jacket: " + getName() + " (Waterproof: " + isWaterproof + ")";
     }
 }

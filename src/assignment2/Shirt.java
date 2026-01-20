@@ -1,42 +1,35 @@
 package assignment2;
 
-// Child #1
-public class Shirt extends ClothingItem {
+public class Shirt extends ClothingItem implements Foldable {
 
-    private String sleeve; // short/long
+    private String sleeveType;
 
-    public Shirt() {
-        super(); // super first
-        this.sleeve = "short";
+    public Shirt(int id, String name, double price, String sleeveType) {
+        super(id, name, price);
+        this.sleeveType = sleeveType;
     }
 
-    public Shirt(int id, String name, String brand, double price, int stock, String sleeve) {
-        super(id, name, brand, price, stock); // super first
-        this.sleeve = sleeve;
+    public String getSleeveType() {
+        return sleeveType;
     }
 
-    public String getSleeve() { return sleeve; }
+    @Override
+    public String getCategory() {
+        return "Topwear";
+    }
 
-    // override #1
     @Override
     public void wear() {
-        System.out.println(name + " shirt, sleeve = " + sleeve);
+        System.out.println("Wearing " + getName());
     }
 
-    // override #2
     @Override
-    public String getType() {
-        return "Shirt";
-    }
-
-    // unique method #1
     public void fold() {
-        System.out.println("Folding the shirt.");
+        System.out.println("Shirt is folded neatly.");
     }
 
-    // unique method #2
-    public boolean isFormal() {
-        return "long".equalsIgnoreCase(sleeve);
+    @Override
+    public String toString() {
+        return "Shirt: " + getName() + " (Sleeve: " + sleeveType + ")";
     }
 }
-
