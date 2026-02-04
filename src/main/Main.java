@@ -1,10 +1,10 @@
 package main;
 
-import menu.StoreMenu;
+import menu.ClothingStoreMenu;
 
 public class Main {
     public static void main(String[] args) {
-        StoreMenu store = new StoreMenu();
-        store.run();
+        ClothingStoreMenu menu = new ClothingStoreMenu();
+        menu.start();
     }
 }

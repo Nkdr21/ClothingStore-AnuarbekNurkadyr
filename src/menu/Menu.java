@@ -1,10 +1,7 @@
 package menu;
 
+// Interface to define the application's flow
 public interface Menu {
-
-    // Shows the list of options
     void displayMenu();
-
-    // Starts the program logic
     void run();
 }
