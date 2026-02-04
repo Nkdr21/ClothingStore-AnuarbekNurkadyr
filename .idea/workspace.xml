@@ -4,7 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6b06ab9-98ab-4157-83c1-e7c13192ff1b" name="Changes" comment="Add assignment2 classes (Jacket, Shirt) + menu2" />
+    <list default="true" id="b6b06ab9-98ab-4157-83c1-e7c13192ff1b" name="Changes" comment="Commit">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_7_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ClothingStore-AnuarbekNurkadyr2/ClothingStore-AnuarbekNurkadyr2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ClothingStore-AnuarbekNurkadyr2/assignment3/assignment3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ClothingStore-AnuarbekNurkadyr.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClothingStore-AnuarbekNurkadyr/assignment1/ClothingItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClothingStore-AnuarbekNurkadyr/assignment1/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClothingStore-AnuarbekNurkadyr/assignment1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClothingStore-AnuarbekNurkadyr/assignment1/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClothingStore-AnuarbekNurkadyr/assignment2/ClothingItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClothingStore-AnuarbekNurkadyr/assignment2/Jacket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClothingStore-AnuarbekNurkadyr/assignment2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClothingStore-AnuarbekNurkadyr/assignment2/Shirt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment1/ClothingItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment1/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment1/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment2/ClothingItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment2/Foldable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment2/Jacket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment2/Shirt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/ClothingStoreMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/ClothingStoreMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/StoreMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/ClothingItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Jacket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Shirt.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +65,11 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/database/ClothingDAO.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/Main.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/menu/ClothingStoreMenu.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/menu/Menu.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/model/Shirt.java" root0="SKIP_HIGHLIGHTING" />
     <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-25/Contents/Home/lib/src.zip!/java.base/java/lang/Object.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProblemsViewState">
@@ -54,14 +90,38 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.assignment2.Main.executor": "Run",
+    "Application.assignment22.Main.executor": "Run",
+    "Application.main.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "editor.preferences.inline.completion"
+    "last_opened_file_path": "/Users/mac/IdeaProjects/ClothingStore-AnuarbekNurkadyr/src/libs",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3402299",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/libs" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="menu" />
+      <recent name="model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.main.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assignment1.Main" />
       <module name="ClothingStore-AnuarbekNurkadyr" />
@@ -75,8 +135,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="assignment2.Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment2.Main" />
+      <module name="ClothingStore-AnuarbekNurkadyr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignment2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="ClothingStore-AnuarbekNurkadyr" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/out/production/ClothingStore-AnuarbekNurkadyr2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.assignment2.Main" />
+      <item itemvalue="Application.main.Main" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -192,7 +285,39 @@
       <option name="project" value="LOCAL" />
       <updated>1767727643643</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add .gitignore and remove IDE/build files">
+      <option name="closed" value="true" />
+      <created>1767730272697</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1767730272697</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Final Fix: Clean Code and Logic Update">
+      <option name="closed" value="true" />
+      <created>1768913496849</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1768913496850</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Final Fix: Clean Code and Logic Update1">
+      <option name="closed" value="true" />
+      <created>1768977049165</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1768977049165</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Commit">
+      <option name="closed" value="true" />
+      <created>1770166637677</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1770166637677</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -210,6 +335,19 @@
     <MESSAGE value="Update Main demo4" />
     <MESSAGE value="Add assignment2 classes (Jacket, Shirt) + menu" />
     <MESSAGE value="Add assignment2 classes (Jacket, Shirt) + menu2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add assignment2 classes (Jacket, Shirt) + menu2" />
+    <MESSAGE value="Add .gitignore and remove IDE/build files" />
+    <MESSAGE value="Final Fix: Clean Code and Logic Update" />
+    <MESSAGE value="Final Fix: Clean Code and Logic Update1" />
+    <MESSAGE value="Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ClothingStore_AnuarbekNurkadyr$assignment2_Main.ic" NAME="assignment2.Main Coverage Results" MODIFIED="1767731021146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>assignment2.*</FILTER>
+    </SUITE>
   </component>
 </project>

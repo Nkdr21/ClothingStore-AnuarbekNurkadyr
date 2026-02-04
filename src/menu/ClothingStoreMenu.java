@@ -59,7 +59,7 @@ public class ClothingStoreMenu {
                     break;
                 case "0":
                     System.out.println("\nThank you for using Clothing Store System!");
-                    System.out.println("Goodbye! 👋");
+                    System.out.println("Goodbye! ");
                     running = false;
                     break;
                 default:
