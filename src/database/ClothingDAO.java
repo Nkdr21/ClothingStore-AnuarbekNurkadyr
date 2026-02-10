@@ -7,6 +7,7 @@ import java.util.List;
 
 public class ClothingDAO {
 
+    // INSERT SHIRT
     public boolean insertShirt(Shirt shirt) {
         String sql = "INSERT INTO items (name, price, item_type, size_val) VALUES (?, ?, 'SHIRT', ?)";
 
@@ -38,6 +39,7 @@ public class ClothingDAO {
         return false;
     }
 
+    // INSERT JACKET
     public boolean insertJacket(Jacket jacket) {
         String sql = "INSERT INTO items (name, price, item_type, fabric_val) VALUES (?, ?, 'JACKET', ?)";
 
@@ -69,6 +71,7 @@ public class ClothingDAO {
         return false;
     }
 
+    // GET ALL ITEMS*
     public List<ClothingItem> getAllItems() {
         List<ClothingItem> items = new ArrayList<>();
         String sql = "SELECT * FROM items ORDER BY id";
@@ -99,6 +102,7 @@ public class ClothingDAO {
         return items;
     }
 
+    // GET ALL SHIRTS
     public List<Shirt> getAllShirts() {
         List<Shirt> shirts = new ArrayList<>();
         String sql = "SELECT * FROM items WHERE item_type = 'SHIRT' ORDER BY id";
@@ -130,6 +134,7 @@ public class ClothingDAO {
         return shirts;
     }
 
+    // GET ALL JACKETS
     public List<Jacket> getAllJackets() {
         List<Jacket> jackets = new ArrayList<>();
         String sql = "SELECT * FROM items WHERE item_type = 'JACKET' ORDER BY id";
@@ -161,6 +166,7 @@ public class ClothingDAO {
         return jackets;
     }
 
+    // GET ITEM BY ID
     public ClothingItem getItemById(int itemId) {
         String sql = "SELECT * FROM items WHERE id = ?";
 
@@ -191,7 +197,7 @@ public class ClothingDAO {
         return null;
     }
 
-    //Display all items with formatting
+    // DISPLAY ALL ITEMS
     public void displayAllItems() {
         List<ClothingItem> items = getAllItems();
 
@@ -210,7 +216,7 @@ public class ClothingDAO {
         System.out.println("Total items: " + items.size());
     }
 
-    //Update a Shirt in the database
+    // UPDATE SHIRT
     public boolean updateShirt(Shirt shirt) {
         String sql = "UPDATE items SET name = ?, price = ?, size_val = ? " +
                 "WHERE id = ? AND item_type = 'SHIRT'";
@@ -243,7 +249,7 @@ public class ClothingDAO {
         return false;
     }
 
-    //Update a Jacket in the database
+    // UPDATE JACKET
     public boolean updateJacket(Jacket jacket) {
         String sql = "UPDATE items SET name = ?, price = ?, fabric_val = ? " +
                 "WHERE id = ? AND item_type = 'JACKET'";
@@ -276,7 +282,7 @@ public class ClothingDAO {
         return false;
     }
 
-    // DELETE OPERATION
+    // DELETE ITEM
     public boolean deleteItem(int itemId) {
         String sql = "DELETE FROM items WHERE id = ?";
 
@@ -305,8 +311,7 @@ public class ClothingDAO {
         return false;
     }
 
-    //Search items by name (case-insensitive, partial match)
-
+    // SEARCH BY NAME*
     public List<ClothingItem> searchByName(String name) {
         List<ClothingItem> results = new ArrayList<>();
         // ILIKE = case-insensitive search (PostgreSQL)
@@ -342,8 +347,7 @@ public class ClothingDAO {
         return results;
     }
 
-    //Search items by price range
-
+    // SEARCH BY PRICE RANGE*
     public List<ClothingItem> searchByPriceRange(double minPrice, double maxPrice) {
         List<ClothingItem> results = new ArrayList<>();
         // BETWEEN includes both min and max values
@@ -378,7 +382,8 @@ public class ClothingDAO {
 
         return results;
     }
-    //Search items by minimum price
+
+    // SEARCH BY MIN PRICE
     public List<ClothingItem> searchByMinPrice(double minPrice) {
         List<ClothingItem> results = new ArrayList<>();
         String sql = "SELECT * FROM items WHERE price >= ? ORDER BY price DESC";
@@ -411,6 +416,8 @@ public class ClothingDAO {
 
         return results;
     }
+
+    // HELPER: EXTRACT ITEM FROM RESULTSET
     private ClothingItem extractItemFromResultSet(ResultSet rs) throws SQLException {
         int id = rs.getInt("id");
         String name = rs.getString("name");
