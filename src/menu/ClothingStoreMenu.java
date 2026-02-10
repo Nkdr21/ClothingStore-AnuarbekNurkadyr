@@ -10,12 +10,13 @@ public class ClothingStoreMenu {
     private ClothingDAO dao;
     private Scanner scanner;
 
-    // Constructor
+    // CONSTRUCTOR
     public ClothingStoreMenu() {
         this.dao = new ClothingDAO();
         this.scanner = new Scanner(System.in);
     }
 
+    // START - MAIN LOOP
     public void start() {
         boolean running = true;
 
@@ -59,7 +60,7 @@ public class ClothingStoreMenu {
                     break;
                 case "0":
                     System.out.println("\nThank you for using Clothing Store System!");
-                    System.out.println("Goodbye! ");
+                    System.out.println("Goodbye!");
                     running = false;
                     break;
                 default:
@@ -68,8 +69,10 @@ public class ClothingStoreMenu {
         }
     }
 
+    // DISPLAY MENU
     private void displayMenu() {
-        System.out.println("     CLOTHING STORE MANAGEMENT SYSTEM   ");
+        System.out.println("======== CLOTHING STORE MANAGEMENT SYSTEM ========");
+
         System.out.println("==== ITEM MANAGEMENT ====");
         System.out.println("1. Add Shirt");
         System.out.println("2. Add Jacket");
@@ -89,6 +92,7 @@ public class ClothingStoreMenu {
         System.out.print("Select an option: ");
     }
 
+    // ADD SHIRT
     private void addShirt() {
         System.out.println("\n=== ADD NEW SHIRT ===");
 
@@ -121,6 +125,7 @@ public class ClothingStoreMenu {
         }
     }
 
+    // ADD JACKET
     private void addJacket() {
         System.out.println("\n=== ADD NEW JACKET ===");
 
@@ -153,6 +158,7 @@ public class ClothingStoreMenu {
         }
     }
 
+    // VIEW ALL ITEMS
     private void viewAllItems() {
         System.out.println("\n=== ALL CLOTHING ITEMS ===");
 
@@ -171,24 +177,32 @@ public class ClothingStoreMenu {
         }
     }
 
+    // VIEW SHIRTS ONLY*
     private void viewShirtsOnly() {
-        System.out.println("\n=== SHIRTS ONLY ===");
+        List<ClothingItem> items = dao.getAllItems();
+        boolean found = false;
 
-        List<Shirt> shirts = dao.getAllShirts();
+        System.out.println("\n ==== SHIRTS ===");
+        for(ClothingItem item : items){
+            if(item instanceof Shirt){
+                Shirt s = (Shirt) item;
+                found = true;
 
-        if (shirts.isEmpty()) {
-            System.out.println("No shirts in database!");
-        } else {
-            System.out.println("----------------------------------------");
-            for (Shirt shirt : shirts) {
-                System.out.print("ID: " + shirt.getId() + " | ");
-                shirt.displayInfo();
+                System.out.println("=================");
+                System.out.println("ID: " + s.getId());
+                System.out.println("Name: " + s.getName());
+                System.out.println("Price: " + s.getPrice());
+                System.out.println("Size: " + s.getSize());
             }
-            System.out.println("----------------------------------------");
-            System.out.println("Total shirts: " + shirts.size());
         }
+
+        if(!found){
+            System.out.println("No shirt found.");
+        }
+        System.out.println();
     }
 
+    // VIEW JACKETS ONLY
     private void viewJacketsOnly() {
         System.out.println("\n=== JACKETS ONLY ===");
 
@@ -207,6 +221,7 @@ public class ClothingStoreMenu {
         }
     }
 
+    // UPDATE ITEM*
     private void updateItem() {
         System.out.println("\n=== UPDATE ITEM ===");
 
@@ -291,6 +306,7 @@ public class ClothingStoreMenu {
         }
     }
 
+    // DELETE ITEM*
     private void deleteItem() {
         System.out.println("\n=== DELETE ITEM ===");
 
@@ -307,11 +323,11 @@ public class ClothingStoreMenu {
             }
 
             // 2. Display item details
-            System.out.println("\n Item to be deleted:");
+            System.out.println("\nItem to be deleted:");
             item.displayInfo();
 
             // 3. Ask for confirmation
-            System.out.print("\n Are you sure you want to delete this item? (yes/no): ");
+            System.out.print("\nAre you sure you want to delete this item? (yes/no): ");
             String confirmation = scanner.nextLine().trim();
 
             // 4. Delete only if user confirms
@@ -330,6 +346,7 @@ public class ClothingStoreMenu {
         }
     }
 
+    // SEARCH BY NAME*
     private void searchByName() {
         System.out.println("\n=== SEARCH BY NAME ===");
 
@@ -356,6 +373,7 @@ public class ClothingStoreMenu {
         }
     }
 
+    // SEARCH BY PRICE RANGE*
     private void searchByPriceRange() {
         System.out.println("\n=== SEARCH BY PRICE RANGE ===");
 
@@ -395,6 +413,7 @@ public class ClothingStoreMenu {
         }
     }
 
+    // SEARCH BY MIN PRICE
     private void searchByMinPrice() {
         System.out.println("\n=== HIGH-PRICED ITEMS ===");
 
@@ -426,6 +445,7 @@ public class ClothingStoreMenu {
         }
     }
 
+    // POLYMORPHISM DEMO
     private void polymorphismDemo() {
         System.out.println("\n=== POLYMORPHISM DEMO ===");
 
@@ -451,6 +471,4 @@ public class ClothingStoreMenu {
             System.out.println("---");
         }
 
-        System.out.println("Demo completed! (Note: Prices in database are NOT changed)");
-    }
-}
+        System.out.println("Demo completed! (Note:
